@@ -1,14 +1,132 @@
 /* reset */
 
+:root {
+  --primary: #222;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #ffffff;
-  background-color: #1e272e;
+  background-color: var(--primary);
 }
 
 a {
   text-decoration: none;
+  color: #fff;
+}
+ul li {
+  list-style: none;
+}
+
+/* header */
+
+.header {
+  height: 70px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.header button {
+  text-transform: uppercase;
+  background-color: #222;
+  border: solid 2px #fff;
+  color: #fff;
+  height: 50px;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transition: ease 0.3s;
+  border-radius: 5px;
+}
+
+.header button:hover {
+  text-transform: uppercase;
+  background-color: #fff;
+  border: solid 2px #222;
+  color: #222;
+}
+/* landing-page */
+
+.landing-page {
+  height: 100vh;
+  width: 100%;
+  background: url("./images/landing-page-background.jpg") no-repeat center
+    center / cover;
+  margin: 0;
+}
+
+.landing-page .content {
+  padding: 10% 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-page h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+.landing-page h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0 0 1rem 0;
+  color: #00c8f5;
+}
+
+.landing-page .content p {
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+.landing-page .content button {
+  width: 300px;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  border: 1px solid #0063e5;
+  background-color: #0063e5;
+  border-radius: 5px;
+  color: #fff;
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.landing-page .content > span > strong {
+  font-size: 2rem;
+}
+
+.landing-page ul {
+  padding-left: 0;
+}
+
+.landing-page .content a {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  margin: 1rem 0;
+}
+
+.landing-page ul li {
+  padding-bottom: 0.5rem;
+}
+
+/* discover */
+
+.discover {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  padding: 10% 15%;
+  flex-direction: column;
+}
+
+.discover .discover-item {
+  display: flex;
+  flex-direction: row;
+  height: 30%;
+  width: 50%;
 }
