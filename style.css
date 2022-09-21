@@ -1,7 +1,7 @@
 /* reset */
 
 :root {
-  --primary: #222;
+  --primary: #000;
 }
 
 body {
@@ -19,6 +19,10 @@ a {
 }
 ul li {
   list-style: none;
+}
+
+.mt-32 {
+  margin-top: 32px;
 }
 
 /* header */
@@ -118,15 +122,45 @@ ul li {
 
 .discover {
   width: 100vw;
-  height: 50vh;
-  display: flex;
-  padding: 10% 15%;
-  flex-direction: column;
+  height: 100vh;
 }
 
-.discover .discover-item {
+.discover .content {
+  width: 50%;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.discover .content .item {
   display: flex;
   flex-direction: row;
-  height: 30%;
-  width: 50%;
+}
+
+.discover .content .item .text {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  padding: 0.8rem;
+}
+
+.discover p,
+.discover li {
+  font-size: 1.2rem;
+}
+
+.discover ul li {
+  padding-left: 0;
+  list-style-type: disc;
+}
+
+.discover h2 {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.discover .content .item img {
+  width: 400px;
+  height: 450px;
+  border-radius: 15px;
 }
