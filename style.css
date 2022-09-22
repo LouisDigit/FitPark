@@ -11,6 +11,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #ffffff;
   background-color: var(--primary);
+  overflow-x: hidden;
 }
 
 a {
@@ -163,4 +164,43 @@ ul li {
   width: 400px;
   height: 450px;
   border-radius: 15px;
+}
+
+/* machines */
+
+.machines .content {
+  margin-top: 5rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.machines .content .text {
+  width: 50%;
+  text-align: center;
+}
+
+.machines .content .text h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.machines .content .text p {
+  font-size: 1.2rem;
+}
+
+.machines .content .grid {
+  display: grid;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+  row-gap: 5px;
+  column-gap: 5px;
+}
+
+.machines .content .grid img {
+  height: 300px;
+  width: 400px;
 }
