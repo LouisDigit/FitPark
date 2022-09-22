@@ -26,6 +26,19 @@ ul li {
   margin-top: 32px;
 }
 
+.button-blue {
+  width: 300px;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  border: 1px solid #0063e5;
+  background-color: #0063e5;
+  border-radius: 5px;
+  color: #fff;
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
 /* header */
 
 .header {
@@ -86,19 +99,6 @@ ul li {
 .landing-page .content p {
   line-height: 2rem;
   font-size: 1.2rem;
-}
-
-.landing-page .content button {
-  width: 300px;
-  margin-top: 1rem;
-  text-transform: uppercase;
-  border: 1px solid #0063e5;
-  background-color: #0063e5;
-  border-radius: 5px;
-  color: #fff;
-  padding: 1rem 3rem;
-  font-size: 1.3rem;
-  cursor: pointer;
 }
 
 .landing-page .content > span > strong {
@@ -168,7 +168,8 @@ ul li {
 
 /* machines */
 
-.machines .content {
+.machines .content,
+.athletes .content {
   margin-top: 5rem;
   height: auto;
   display: flex;
@@ -176,31 +177,38 @@ ul li {
   align-items: center;
 }
 
-.machines .content .text {
+.machines .content .text,
+.athletes .content .text {
   width: 50%;
   text-align: center;
 }
 
-.machines .content .text h1 {
+.machines .content .text h1,
+.athletes .content .text h1 {
   margin: 0;
   font-size: 3rem;
 }
 
-.machines .content .text p {
+.machines .content .text p,
+.athletes .content .text p {
   font-size: 1.2rem;
 }
 
-.machines .content .grid {
+.machines .content .grid,
+.athletes .content .grid {
   display: grid;
   grid-template-areas:
     ". . ."
     ". . ."
     ". . .";
-  row-gap: 5px;
-  column-gap: 5px;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-bottom: 5rem;
 }
 
-.machines .content .grid img {
+.machines .content .grid img,
+.athletes .content .grid img {
   height: 300px;
   width: 400px;
+  border-radius: 15px;
 }
