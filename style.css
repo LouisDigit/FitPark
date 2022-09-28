@@ -212,3 +212,93 @@ ul li {
   width: 400px;
   border-radius: 15px;
 }
+
+/* services */
+
+.services {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services h1 {
+  font-size: 4rem;
+}
+
+.services .content {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.services .content .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services .content .item {
+  width: 33%;
+}
+.services .content .item .logo {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services .content .item i {
+  font-size: 6rem;
+  opacity: 0.6;
+}
+
+.services .content .item h3 {
+  font-size: 1.8rem;
+}
+
+.services .content .item ul {
+  margin: 0;
+  padding: 0;
+  opacity: 0.6;
+}
+
+.services .content .item ul li {
+  text-align: center;
+  font-size: 1.2rem;
+  padding-bottom: 15px;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  margin-top: 8rem;
+  margin-bottom: 1rem;
+}
+
+footer .content {
+  width: 80%;
+  margin: auto;
+}
+
+footer .content .link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+footer .content .link a {
+  white-space: nowrap;
+  padding: 0 0.4rem;
+  opacity: 0.6;
+}
+
+footer .content .link a:hover {
+  opacity: 1;
+  cursor: pointer;
+}
