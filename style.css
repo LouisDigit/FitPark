@@ -14,6 +14,12 @@ body {
   overflow-x: hidden;
 }
 
+@media screen and (max-width: 414px) {
+  body {
+    width: 100vh;
+  }
+}
+
 a {
   text-decoration: none;
   color: #fff;
@@ -49,6 +55,12 @@ ul li {
   padding: 0 2rem;
 }
 
+@media screen and (max-width: 414px) {
+  .header {
+    justify-content: center;
+  }
+}
+
 .header button {
   text-transform: uppercase;
   background-color: #222;
@@ -78,10 +90,29 @@ ul li {
   margin: 0;
 }
 
+@media screen and (max-width: 414px) {
+  .landing-page {
+    width: 100vh;
+  }
+}
+
 .landing-page .content {
   padding: 10% 5%;
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 414px) {
+  .landing-page .content {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .landing-page button {
+    margin: auto;
+  }
 }
 
 .landing-page h1 {
@@ -130,6 +161,25 @@ ul li {
   width: 50%;
   margin: auto;
   margin-top: 5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .discover .content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .discover .content {
+    width: 90%;
+  }
+  .discover {
+    width: auto;
+  }
+
+  .machines {
+    margin-top: 10rem;
+  }
 }
 
 .discover .content .item {
@@ -206,11 +256,45 @@ ul li {
   margin-bottom: 5rem;
 }
 
+@media screen and (max-width: 414px) {
+  .machines .content .grid,
+  .athletes .content .grid {
+    grid-template-areas:
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      ".";
+  }
+}
+
 .machines .content .grid img,
 .athletes .content .grid img {
   height: 300px;
   width: 400px;
   border-radius: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .machines .content .grid img,
+  .athletes .content .grid img {
+    height: 200px;
+    width: 300px;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .machines .content .grid img,
+  .athletes .content .grid img {
+    height: 400px;
+    width: 500px;
+    border-radius: 15px;
+  }
 }
 
 /* services */
@@ -232,6 +316,20 @@ ul li {
   flex-direction: row;
   width: 50%;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+  .services .content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .services .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .services .content .item {
@@ -272,6 +370,24 @@ ul li {
   padding-bottom: 15px;
 }
 
+@media screen and (max-width: 414px) {
+  .services .content .item i {
+    font-size: 9rem;
+  }
+
+  .services .content .item {
+    margin-bottom: 5rem;
+  }
+
+  .services .content .item h3 {
+    font-size: 3rem;
+  }
+
+  .services .content .item ul li {
+    font-size: 2rem;
+  }
+}
+
 /* footer */
 
 footer {
@@ -283,6 +399,13 @@ footer {
 footer .content {
   width: 80%;
   margin: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .content {
+    width: 100%;
+    margin: auto;
+  }
 }
 
 footer .content .link {
@@ -301,4 +424,23 @@ footer .content .link a {
 footer .content .link a:hover {
   opacity: 1;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .content .link a {
+    padding: 0 0.8rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  footer .content .link {
+    flex-direction: column;
+    align-items: center;
+    justify-content: centera;
+  }
+
+  footer .content .link a {
+    padding-bottom: 0.8rem;
+    font-size: 2rem;
+  }
 }
